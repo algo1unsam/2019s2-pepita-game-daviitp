@@ -25,14 +25,11 @@ object pepita {
 	}
 	
 	method irAComer(comida) {
-		if (self.alcanzaEnergia(comida.position())) {
 		self.move(comida.position())
 		self.come(comida)
 		comida.teComieron()
-		}
-		else(self.dameComida())
-		}
 	}
+	
 	
 	method yaLlegue() {
 		game.say(self,"Ya llegue a " + ciudad)
